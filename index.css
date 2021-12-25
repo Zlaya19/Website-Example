@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'lane';
+    src: url('./font/LANENAR_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'lane';
+}
+
+body {
+    margin: auto;
+    background: #111;
+    width: 95%;
+}
+
+#image {
+    text-shadow: 0 0 5px #666;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background: #333;
+    margin-bottom: 10px;
+    border: 3px solid;
+    border-top: none;
+    border-image: linear-gradient(45deg,#333, dodgerblue, #333, dodgerblue) 1;
+}
+
+#list li a {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+}
+
+#list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+#container {
+    min-height: 600px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #222;
+    border: 3px solid;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-image: linear-gradient(45deg,#333, dodgerblue, #333, dodgerblue) 1;
+}
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+    width: 300px;
+    height: 350px;
+    background: #222;
+    box-shadow: 0 0 8px 1px #111, 0 0 8px 1px #111;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 64px;
+    border: 1px solid #111;
+    margin-bottom: 80px;
+    color: #999;
+}
+
+.wrapperTop {
+    width: 100%;
+    height: 50%;
+    background: #C0C0C0;
+    border: 3px solid #444;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: url(images/pc.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    box-shadow: inset 0 0 5px #111;
+}
+
+
+
+span-rock {
+    font-weight: bold;
+    font-size: 72px;
+    overflow: visible;
+}
+
+#miniDiv {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    box-shadow: 0 0 12px 2px #000000, 0 0 5px 2px;
+}
+
+.class_div {
+    width: 170px;
+    position: absolute;
+    display: flex;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #F5F5F5;
+}
+
+
+.headlineAbout {
+    position: absolute;
+    border: none;
+    width: 110px;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 0 0 1px grey, 0 0 1px grey;
+    background: rgb(228, 228, 228);
+    border-bottom-right-radius: 32px;
+}
+
+.projectAbout {
+    padding: 15px;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.headlineH3 {
+    border: none;
+    width: 120px;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #999;
+    text-decoration: overline;
+    /* text-shadow: 0 0 1.5px #111, 0 0 1.5px #111; */
+    background: #333;
+    border-bottom-right-radius: 32px;
+}
+
+#projectHeader {
+    text-align: center;
+    width: 96%;
+    margin: -2px auto;
+    background: #222;
+    color: dodgerblue;
+    text-shadow: 0 0 1.5px grey, 0 0 1.5px grey;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 3px solid #333;
+    box-shadow: 0 0 3px 1px #111, 0 0 3px 1px #111;
+}
+
+
+   
+#footerLine {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid;
+    border-bottom: none;
+    background: #222;
+    color: #999;
+    border-image: linear-gradient(45deg,#333, dodgerblue, #333, dodgerblue) 1;
+}
+#footer_line {
+    font-size: 38px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    #navbar {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    #list {
+        flex-direction: column;
+    }
+}
