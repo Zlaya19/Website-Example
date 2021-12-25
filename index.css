@@ -5,17 +5,24 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'rajdhani';
+    src: url('./font/rajdhani-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'lane';
 }
 
 body {
     margin: auto;
     background: #111;
     width: 95%;
+    font-family: 'lane';
 }
 
 #image {
@@ -173,6 +180,7 @@ span-rock {
     text-decoration: overline;
     /* text-shadow: 0 0 1.5px #111, 0 0 1.5px #111; */
     background: #333;
+    box-shadow: 0 0 3px #333;
     border-bottom-right-radius: 32px;
 }
 
@@ -203,10 +211,11 @@ span-rock {
     border-bottom: none;
     background: #222;
     color: #999;
+    font-family: 'rajdhani';
     border-image: linear-gradient(45deg,#333, dodgerblue, #333, dodgerblue) 1;
 }
 #footer_line {
-    font-size: 38px;
+    font-size: 34px;
     font-weight: lighter;
 }
 
